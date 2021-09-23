@@ -72,9 +72,17 @@ func InitEnv() {
 		env = "develop"
 	}
 
+<<<<<<< HEAD
 	log.Print("Environment: " + env)
 	err := godotenv.Load(".env." + env)
 	if err != nil {
 		log.Fatal("Error loading .env." + env)
+=======
+	log.Print("[microservice-hubster] Service initialized microservice-hubster")
+	log.Print("[microservice-hubster] Environment: " + env)
+	err := godotenv.Load(".env." + env)
+	if err != nil {
+		log.Fatal("[microservice-hubster] Error loading .env." + env)
+>>>>>>> main
 	}
 }
